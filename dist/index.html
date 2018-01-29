@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Techblog</title>
-    <link href="http://io.misostack.com/dist/styles.css" rel="stylesheet"></head>
+<link href="styles.css" rel="stylesheet"></head>
 <body class="body-default">
     <div class="wrapper">
         <header class="header">
@@ -70,9 +70,6 @@
         <div class="container main-content">
             <div class="row">
                 <main class="content col-md-9">
-                    
-Hello
-
                     <article class="article article-scrollby" data-target="#article-scrollpy">
                         <h1>Java vs. Node.js: Huynh đệ tương tàn</h1>
                         <p>
@@ -90,7 +87,7 @@ Hello
                         <h3>Heading 3</h3>
                         <p>Lorem ipsum, <strong>dolor</strong> sit amet consectetur adipisicing elit. Distinctio dolorum aliquam adipisci sequi consequuntur, et porro fugiat, delectus blanditiis placeat modi nostrum deleniti? Aliquam numquam porro nisi exercitationem qui necessitatibus?</p>
                         <h4>Heading 4</h4>
-                        <img src="http://io.misostack.com/dist/images/850x350.png" alt="sample image">
+                        <img src="images/850x350.png" alt="sample image">
                         <h5>List</h5>
                         <ul>
                             <li>[x] Line 1</li>
@@ -106,9 +103,9 @@ Hello
                             <li><a href="http://it-ebooks.info/">http://it-ebooks.info/</a></li>
                         </ul>
                         <h4>Lazy loading</h4>
-                        <img src="http://io.misostack.com/dist/images/1.jpg" class="lazy" alt="sample image">
-                        <img src="http://io.misostack.com/dist/images/2.jpg" class="lazy" alt="sample image">
-                        <img src="http://io.misostack.com/dist/images/3.jpg" class="lazy" alt="sample image">
+                        <img data-src="images/1.jpg" alt="Image 1" class="lazy" />
+                        <img data-src="images/2.jpg" alt="Image 1" class="lazy" />
+                        <img data-src="images/3.jpg" alt="Image 1" class="lazy" />
                         <h5>Code highlight</h5>
                         <pre class="code-highlight">
                             <code class="language-css">
@@ -176,5 +173,5 @@ Hello
             </div>
         </footer>        
     </div>
-    <script type="text/javascript" src="http://io.misostack.com/dist/app.bundle.js"></script></body>
+<script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
