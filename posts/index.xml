@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Developer Portal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jan 2018 15:36:24 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jan 2018 15:11:54 +0700</lastBuildDate>
     
 	<atom:link href="http://io.misostack.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo Tips</title>
+      <link>http://io.misostack.com/posts/hugo-tips/</link>
+      <pubDate>Tue, 30 Jan 2018 15:11:54 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/posts/hugo-tips/</guid>
+      <description>lorem ipsum</description>
+    </item>
     
     <item>
       <title>Hugo Blue Print</title>
@@ -18,6 +27,15 @@
       
       <guid>http://io.misostack.com/posts/hugo-blue-print/</guid>
       <description>How to run hugo server in local hugo server  How to build site? hugo  How to create new hugo post hugo new posts/new-post-title.md  How to run hugo server in local hugo server  How to build site? hugo  How to create new hugo post hugo new posts/new-post-title.md  ## How to run hugo server in local hugo server  How to build site? hugo  How to create new hugo post hugo new posts/new-post-title.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://io.misostack.com/posts/my-first-post/</link>
+      <pubDate>Fri, 24 Nov 2017 19:00:53 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/posts/my-first-post/</guid>
+      <description>My first post</description>
     </item>
     
   </channel>

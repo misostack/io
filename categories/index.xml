@@ -10,5 +10,23 @@
 	<atom:link href="http://io.misostack.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Hugo</title>
+      <link>http://io.misostack.com/categories/hugo/</link>
+      <pubDate>Tue, 30 Jan 2018 15:11:54 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>http://io.misostack.com/categories/notes/</link>
+      <pubDate>Fri, 24 Nov 2017 19:00:53 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/categories/notes/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
