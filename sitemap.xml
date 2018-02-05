@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://io.misostack.com/posts/cai-dat-ruby/</loc>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://io.misostack.com/posts/hugo-tips/</loc>
     <lastmod>2018-01-30T15:11:54+07:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>http://io.misostack.com/</loc>
-    <lastmod>2018-01-30T15:11:54+07:00</lastmod>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,12 +47,31 @@
   
   <url>
     <loc>http://io.misostack.com/posts/</loc>
-    <lastmod>2018-01-30T15:11:54+07:00</lastmod>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://io.misostack.com/categories/ror/</loc>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://io.misostack.com/tags/ror/</loc>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://io.misostack.com/tags/ruby/</loc>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://io.misostack.com/tags/</loc>
+    <lastmod>2018-02-05T16:51:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
