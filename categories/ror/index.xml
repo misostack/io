@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ror on Developer Portal</title>
+    <title>Ror on Technical Blog</title>
     <link>http://io.misostack.com/categories/ror/</link>
-    <description>Recent content in Ror on Developer Portal</description>
+    <description>Recent content in Ror on Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Feb 2018 16:51:42 +0700</lastBuildDate>
