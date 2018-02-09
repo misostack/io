@@ -17,8 +17,9 @@
       <pubDate>Thu, 08 Feb 2018 12:04:26 +0700</pubDate>
       
       <guid>http://io.misostack.com/posts/1-first-meeting-voi-vultr/</guid>
-      <description>Tổng quan
- Đăng ký tài khoản trên Vultr và tạo VPS đầu tiên Thiết lập bảo mật cho SSH Update packages  </description>
+      <description> Tổng quan
+ Đăng ký tài khoản trên Vultr và tạo VPS đầu tiên Thiết lập bảo mật cho SSH Update packages  Thiết lập bảo mật cho SSH  Disable login by password Disable root login  sudo vi /etc/ssh/sshd_config  Change these settings in sshd_config file
+PermitRootLogin no PasswordAuthentication no  </description>
     </item>
     
   </channel>

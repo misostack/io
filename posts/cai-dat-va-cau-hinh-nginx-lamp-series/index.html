@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Hugo Tips | Technical Blog</title>
-    <meta name="description" content="Hugo Tips" />
+    <title>Cài đặt và cấu hình nginx | Technical Blog</title>
+    <meta name="description" content="Hướng dẫn cấu hình và cài đặt nginx" />
 
     <link href="http://io.misostack.com/dist/styles.css" rel="stylesheet"></head>
 <body class="body-default">
@@ -136,20 +136,60 @@
                 <main class="content col-md-9">
                     
     <article class="article article-scrollby" data-target="#article-scrollpy">
-        <h1>Hugo Tips</h1>
+        <h1>Cài đặt và cấu hình nginx</h1>
         <p>
             <strong>Categories: </strong>
             
-                <a href="http://io.misostack.com/categories/hugo">hugo</a>
+                <a href="http://io.misostack.com/categories/lamp">lamp</a>
             
         </p>        
         <p>
             <strong>Tags: </strong>
             
-                <a href="http://io.misostack.com/tags/techblog">techblog</a>
+                <a href="http://io.misostack.com/tags/linux">linux</a>
             
         </p>
-        <p><img src="/posts/hugo-tips.jpg" ></p>
+        <ul>
+<li>Đăng nhập root</li>
+</ul>
+
+<pre><code class="language-bash">sudo su
+</code></pre>
+
+<ul>
+<li>Cài đặt NGINX sử dụng apt-get</li>
+</ul>
+
+<pre><code class="language-bash">sudo apt-get install nginx
+</code></pre>
+
+<ul>
+<li>Kiểm tra firewall</li>
+</ul>
+
+<pre><code class="language-bash">sudo ufw app list
+</code></pre>
+
+<ul>
+<li>Allow Nginx trên firewall</li>
+</ul>
+
+<pre><code class="language-bash">sudo ufw allow 'Nginx Full'
+</code></pre>
+
+<ul>
+<li>Kiểm tra trạng thái</li>
+</ul>
+
+<pre><code class="language-bash">systemctl status nginx
+</code></pre>
+
+<ul>
+<li>Add nginx to start up service</li>
+</ul>
+
+<pre><code class="language-bash">systemctl enable nginx
+</code></pre>
 
     </article>
 
@@ -160,9 +200,11 @@
     <h3 class="widget-header ucfirst"><span>Post Series</span></h3>
     <ul class="sidebar-links">
     
-        <li><a class="ucfirst" href="http://io.misostack.com/posts/hugo-blue-print/">1.Hugo Blue Print</a></li>          
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/lamp-la-gi/">1.LAMP là gì</a></li>          
     
-        <li><a class="ucfirst" href="http://io.misostack.com/posts/hugo-tips/">2.Hugo Tips</a></li>          
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/1-first-meeting-voi-vultr/">2.Cấu hình lần đầu tiên với VPS Vultr</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/cai-dat-va-cau-hinh-nginx-lamp-series/">3.Cài đặt và cấu hình nginx</a></li>          
     
     </ul>
 </div>

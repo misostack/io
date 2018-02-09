@@ -151,13 +151,31 @@
                 <a href="http://io.misostack.com/tags/vps">vps</a>
             
         </p>
-        <p><strong>Tổng quan</strong></p>
+        
+
+<p><strong>Tổng quan</strong></p>
 
 <ul>
 <li>Đăng ký tài khoản trên Vultr và tạo VPS đầu tiên</li>
 <li>Thiết lập bảo mật cho SSH</li>
 <li>Update packages</li>
 </ul>
+
+<h2 id="thiết-lập-bảo-mật-cho-ssh">Thiết lập bảo mật cho SSH</h2>
+
+<ul>
+<li>Disable login by password</li>
+<li>Disable root login</li>
+</ul>
+
+<pre><code class="language-bash">sudo vi /etc/ssh/sshd_config
+</code></pre>
+
+<p>Change these settings in sshd_config file</p>
+
+<pre><code class="language-bash">PermitRootLogin no
+PasswordAuthentication no
+</code></pre>
 
     </article>
 
@@ -168,9 +186,11 @@
     <h3 class="widget-header ucfirst"><span>Post Series</span></h3>
     <ul class="sidebar-links">
     
-        <li><a class="ucfirst" href="http://io.misostack.com/posts/lamp-la-gi/">LAMP là gì</a></li>   
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/lamp-la-gi/">1.LAMP là gì</a></li>          
     
-        <li><a class="ucfirst" href="http://io.misostack.com/posts/1-first-meeting-voi-vultr/">Cấu hình lần đầu tiên với VPS Vultr</a></li>   
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/1-first-meeting-voi-vultr/">2.Cấu hình lần đầu tiên với VPS Vultr</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/cai-dat-va-cau-hinh-nginx-lamp-series/">3.Cài đặt và cấu hình nginx</a></li>          
     
     </ul>
 </div>
