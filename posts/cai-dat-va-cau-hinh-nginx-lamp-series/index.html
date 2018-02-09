@@ -149,7 +149,9 @@
                 <a href="http://io.misostack.com/tags/linux">linux</a>
             
         </p>
-        <ul>
+        
+
+<ul>
 <li>Đăng nhập root</li>
 </ul>
 
@@ -189,6 +191,70 @@
 </ul>
 
 <pre><code class="language-bash">systemctl enable nginx
+</code></pre>
+
+<h2 id="tạo-virtual-host-trên-nginx">Tạo virtual host trên nginx</h2>
+
+<ul>
+<li>Copy default config</li>
+</ul>
+
+<pre><code class="language-bash">sudo su
+cd /etc/nginx
+cp sites-available/default sites-available/io.sonnm.local
+</code></pre>
+
+<ul>
+<li>Tạo symlink for config</li>
+</ul>
+
+<pre><code class="language-bash">ln -sf /etc/nginx/sites-available/io.sonnm.local /etc/nginx/sites-enabled/io.sonnm.local
+</code></pre>
+
+<ul>
+<li>Kiểm tra symlink</li>
+</ul>
+
+<pre><code class="language-bash">ls -alh sites-enabled
+</code></pre>
+
+<p><span class="important">Lưu ý</span> : symlink chỉ allow absolute path</p>
+
+<ul>
+<li>Thay đổi root path, hostname</li>
+</ul>
+
+<pre><code class="language-bash">vi /etc/nginx/sites-avabile/io.sonnm.local
+</code></pre>
+
+<pre><code class="language-bash">root /home/ubuntu/webs/io.sonnm.local
+</code></pre>
+
+<pre><code class="language-bash">server {
+    listen 80;
+    listen [::]:80;
+
+    # Root config
+    root /home/ubuntu/webs/io.sonnm.com;
+
+    # Add index.php to the list if you are using PHP
+    index index.html index.htm index.nginx-debian.html;
+
+    server_name io.sonnm.local www.io.sonnm.local;
+
+    location / {
+            # First attempt to serve request as file, then
+            # as directory, then fall back to displaying a 404.
+            try_files $uri $uri/ =404;
+    }
+}
+</code></pre>
+
+<ul>
+<li>Reload lại nginx</li>
+</ul>
+
+<pre><code class="language-bash">systemctl restart nginx
 </code></pre>
 
     </article>

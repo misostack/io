@@ -17,7 +17,7 @@
       <pubDate>Fri, 09 Feb 2018 14:40:26 +0700</pubDate>
       
       <guid>http://io.misostack.com/posts/cai-dat-va-cau-hinh-nginx-lamp-series/</guid>
-      <description> Đăng nhập root  sudo su   Cài đặt NGINX sử dụng apt-get  sudo apt-get install nginx   Kiểm tra firewall  sudo ufw app list   Allow Nginx trên firewall  sudo ufw allow &#39;Nginx Full&#39;   Kiểm tra trạng thái  systemctl status nginx   Add nginx to start up service  systemctl enable nginx  </description>
+      <description>Đăng nhập root  sudo su   Cài đặt NGINX sử dụng apt-get  sudo apt-get install nginx   Kiểm tra firewall  sudo ufw app list   Allow Nginx trên firewall  sudo ufw allow &#39;Nginx Full&#39;   Kiểm tra trạng thái  systemctl status nginx   Add nginx to start up service  systemctl enable nginx  Tạo virtual host trên nginx  Copy default config  sudo su cd /etc/nginx cp sites-available/default sites-available/io.</description>
     </item>
     
     <item>
