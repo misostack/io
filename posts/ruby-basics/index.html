@@ -181,6 +181,26 @@
 <li>Exceptions</li>
 </ul>
 
+<h2 id="tổng-hợp-chung">Tổng hợp chung</h2>
+
+<h3 id="1-một-số-toán-tử-trong-ruby">1.Một số toán tử trong ruby</h3>
+
+<pre><code class="language-bash">+ plus
+- minus
+/ slash ( chia lấy phần nguyên )
+* asterisk ( chia lấy phần dư )
+% percent
+&lt; less-than
+&gt; greater-than
+&lt;= less-than-equal
+&gt;= greater-than-equal
+</code></pre>
+
+<pre><code class="language-bash">$ irb
+$ 7/3
+
+</code></pre>
+
 <h2 id="một-số-bài-toán-nhỏ-để-thực-hành-ruby-basic">Một số bài toán nhỏ để thực hành ruby basic</h2>
 
 <pre><code class="language-bash">Điều kiện cho phép user nhập input và có output đúng như mong muốn
@@ -190,7 +210,40 @@
 
 <ul>
 <li>Hiển thị bảng cửu chương tương ứng với số của người dùng nhập vào, giới hạn từ 1-9</li>
-<li>Hiển thị cây thông n tầng bằng dấu *</li>
+</ul>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+puts &quot;Đề bài : Hiển thị bảng cửu chương tương ứng với số của người dùng nhập vào, giới hạn từ 1-10&quot;
+
+number = ARGV[0].to_i
+
+puts &quot;Sau đây là bảng cửu chương #{number}&quot;
+
+puts &quot;#{1+2}&quot;
+
+(1..10).each do |i|
+  puts &quot;#{number} x #{i} = #{number * i }&quot;
+end
+</code></pre>
+
+<pre><code class="language-bash">$ ./less001.rb 1
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-bash">$ ruby less001.rb 1
+</code></pre>
+
+<ul>
+<li>Hiển thị một số hình n tầng bằng dấu * : hình vuông, tam giác vuông, tam giác cân ( đặc, rỗng )</li>
+</ul>
+
+<p><strong>Hình vuông đặc</strong></p>
+
+<pre><code class="language-ruby"></code></pre>
+
+<ul>
 <li>Đổi giây ra giờ, phút, giây. Ví dụ: 90 giây ~ 1 phút 30 giây</li>
 <li>Viết chương trình cộng, trừ, nhân, chia 2 số bất kì. Ví dụ người dùng nhập : 2 + 3 thì cho ra kết quả là 2 + 3 = 5</li>
 </ul>
@@ -215,6 +268,8 @@
         <li><a class="ucfirst" href="http://io.misostack.com/posts/cai-dat-ruby/">1.Cài đặt Ruby</a></li>          
     
         <li><a class="ucfirst" href="http://io.misostack.com/posts/ruby-basics/">2.Ruby Basics</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/ruby-parameters-unpacking-variables/">3.Parameters Unpacking Variables</a></li>          
     
     </ul>
 </div>
