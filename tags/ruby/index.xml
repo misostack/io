@@ -17,7 +17,7 @@
       <pubDate>Thu, 22 Feb 2018 15:44:41 +0700</pubDate>
       
       <guid>http://io.misostack.com/posts/ruby-parameters-unpacking-variables/</guid>
-      <description> ARGV first, second, third = ARGV puts &amp;quot;Your first variable is: #{first}&amp;quot; puts &amp;quot;Your second variable is: #{second}&amp;quot; puts &amp;quot;Your third variable is: #{third}&amp;quot;  $ ruby ex.rb first 2nd 3rd Your first variable is: first Your second variable is: 2nd Your third variable is: 3rd  ENV </description>
+      <description> ARGV first, second, third = ARGV puts &amp;quot;Your first variable is: #{first}&amp;quot; puts &amp;quot;Your second variable is: #{second}&amp;quot; puts &amp;quot;Your third variable is: #{third}&amp;quot;  $ ruby ex.rb first 2nd 3rd Your first variable is: first Your second variable is: 2nd Your third variable is: 3rd  </description>
     </item>
     
     <item>
