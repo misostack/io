@@ -153,6 +153,8 @@
         </p>
         
 
+<p>Repo : <a href="https://gitlab.com/misostack/ruby/">https://gitlab.com/misostack/ruby/</a></p>
+
 <h3 id="một-số-editor-dùng-để-code-ruby">Một số editor dùng để code ruby</h3>
 
 <ul>
@@ -303,6 +305,60 @@ end
 puts 'Hinh chu nhat co chieu_dai=2 va chieu_rong=2 la hinh vuong' if la_hinh_vuong?(2,2)
 puts 'Nam 2012 la nam nhuan' if kiem_tra_nam_nhuan?(2012)
 puts 'Nam 1000 khong phai la nam nhuan' unless kiem_tra_nam_nhuan?(1000)
+</code></pre>
+
+<p><strong>Ruby case</strong></p>
+
+<p>Ref : <a href="http://www.rubyguides.com/2015/10/ruby-case/">http://www.rubyguides.com/2015/10/ruby-case/</a></p>
+
+<pre><code class="language-ruby">def capacity_check(capacity)
+  case capacity
+  when 0
+    &quot;You ran out of gas.&quot;
+  when 1..20
+    &quot;The tank is almost empty. Quickly, find a gas station!&quot;
+  when 21..70
+    &quot;You should be ok for now.&quot;
+  when 71..100
+    &quot;The tank is almost full.&quot;
+  else
+    &quot;Error: capacity has an invalid value (#{capacity})&quot;
+  end
+end
+
+puts capacity_check(0)
+
+def serial_check(serial)
+  case serial
+  when /\AC/
+    &quot;Low risk&quot;
+  when /\AL/
+    &quot;Medium risk&quot;
+  when /\AX/
+    &quot;High risk&quot;
+  else
+    &quot;Unknown risk&quot;
+  end
+end
+puts serial_check('C')
+puts serial_check('L')
+puts serial_check('X')
+puts serial_check('Z')
+</code></pre>
+
+<p>Regex : <a href="http://www.rubyguides.com/2015/06/ruby-regex/">http://www.rubyguides.com/2015/06/ruby-regex/</a></p>
+
+<pre><code class="language-bash">When you have a simple 1:1 mapping, should not use ruby case, use hash solution
+</code></pre>
+
+<pre><code class="language-ruby">SITES = {
+  &quot;europe&quot;  =&gt; &quot;http://eu.example.com&quot;,
+  &quot;america&quot; =&gt; &quot;http://us.example.com&quot;
+}
+
+country = 'europe'
+
+puts SITES[country]
 </code></pre>
 
 <h4 id="5-data-structures">5.Data Structures</h4>
