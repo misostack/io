@@ -153,7 +153,7 @@
         </p>
         
 
-<h2 id="một-số-editor-dùng-để-code-ruby">Một số editor dùng để code ruby</h2>
+<h3 id="một-số-editor-dùng-để-code-ruby">Một số editor dùng để code ruby</h3>
 
 <ul>
 <li>Ruby Mine</li>
@@ -162,7 +162,7 @@
 <li>Sublime</li>
 </ul>
 
-<h2 id="các-quy-tắc-cơ-bản-khi-bắt-đầu-với-ruby">Các quy tắc cơ bản khi bắt đầu với ruby</h2>
+<h3 id="các-quy-tắc-cơ-bản-khi-bắt-đầu-với-ruby">Các quy tắc cơ bản khi bắt đầu với ruby</h3>
 
 <ul>
 <li>Syntax</li>
@@ -181,9 +181,9 @@
 <li>Exceptions</li>
 </ul>
 
-<h2 id="tổng-hợp-chung">Tổng hợp chung</h2>
+<h3 id="tổng-hợp-chung">Tổng hợp chung</h3>
 
-<h3 id="1-một-số-toán-tử-trong-ruby">1.Một số toán tử trong ruby</h3>
+<h4 id="1-một-số-toán-tử-trong-ruby">1.Một số toán tử trong ruby</h4>
 
 <pre><code class="language-bash">+ plus
 - minus
@@ -199,6 +199,87 @@
 <pre><code class="language-bash">$ irb
 $ 7/3
 
+</code></pre>
+
+<h4 id="2-if-else-case">2.If-Else, Case</h4>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+puts 'Example for ifelse'
+
+puts '1 &lt; 2' if 1 &lt; 2
+def la_hinh_vuong?(chieu_dai, chieu_rong)
+  chieu_dai == chieu_rong
+end
+
+puts 'Hinh chu nhat co chieu_dai=2 va chieu_rong=2 la hinh vuong' if la_hinh_vuong?(2,2)
+
+</code></pre>
+
+<h4 id="3-loop">3.Loop</h4>
+
+<p class="important">
+The iterator varible in the “for” or "while" looping will keep alive after iteration block. iterator variable from “each” iterator block will not.
+</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+puts 'Example for ruby loops'
+# while
+i = 0
+while i &lt; 10
+  i += 1
+  puts i.to_s
+end
+puts defined?(i) ? &quot;i=#{i}&quot; : 'i=nil'
+# for
+puts '.' * 10
+for j in 1..10
+  puts j.to_s
+end
+puts defined?(j) ? &quot;j=#{j}&quot; : 'j=nil'
+# each
+puts '.' * 10
+(1..10).each do |x|
+  puts x.to_s
+end
+puts defined?(x) ? &quot;x=#{x}&quot; : 'x=nil'
+</code></pre>
+
+<pre><code class="language-bash">...
+i=10
+...
+j=10
+...
+x=nil
+</code></pre>
+
+<h4 id="4-if-else-statement">4.If Else Statement</h4>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+puts 'Example for ifelse'
+
+puts '1 &lt; 2' if 1 &lt; 2
+def la_hinh_vuong?(chieu_dai, chieu_rong)
+  chieu_dai == chieu_rong
+end
+
+def kiem_tra_nam_nhuan?(nam)
+  nam_nhuan = false
+  if nam % 4 == 0 &amp;&amp; nam % 100 !=0
+    nam_nhuan = true
+  elsif nam % 400 == 0
+    nam_nhuan = true
+  else
+    nam_nhuan = false
+  end
+  nam_nhuan
+end
+
+puts 'Hinh chu nhat co chieu_dai=2 va chieu_rong=2 la hinh vuong' if la_hinh_vuong?(2,2)
+puts 'Nam 2012 la nam nhuan' if kiem_tra_nam_nhuan?(2012)
+puts 'Nam 1000 khong phai la nam nhuan' unless kiem_tra_nam_nhuan?(1000)
 </code></pre>
 
 <h2 id="một-số-bài-toán-nhỏ-để-thực-hành-ruby-basic">Một số bài toán nhỏ để thực hành ruby basic</h2>

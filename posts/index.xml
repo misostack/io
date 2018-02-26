@@ -26,7 +26,7 @@
       <pubDate>Thu, 22 Feb 2018 14:13:26 +0700</pubDate>
       
       <guid>http://io.misostack.com/posts/ruby-basics/</guid>
-      <description>Một số editor dùng để code ruby  Ruby Mine Atom Visual Code Sublime  Các quy tắc cơ bản khi bắt đầu với ruby  Syntax Variables Operators Comments If Else Loops, Iterators, Ranges Methods Classes &amp;amp; Modules Strings Arrays Hashes Date&amp;amp;Time File I/O Exceptions  Tổng hợp chung 1.Một số toán tử trong ruby + plus - minus / slash ( chia lấy phần nguyên ) * asterisk ( chia lấy phần dư ) % percent &amp;lt; less-than &amp;gt; greater-than &amp;lt;= less-than-equal &amp;gt;= greater-than-equal  $ irb $ 7/3  Một số bài toán nhỏ để thực hành ruby basic Điều kiện cho phép user nhập input và có output đúng như mong muốn  Bài tập thực hành 1: Viết chương trình tính toán các bài toán đơn giản  Hiển thị bảng cửu chương tương ứng với số của người dùng nhập vào, giới hạn từ 1-9  #!</description>
+      <description>Một số editor dùng để code ruby  Ruby Mine Atom Visual Code Sublime  Các quy tắc cơ bản khi bắt đầu với ruby  Syntax Variables Operators Comments If Else Loops, Iterators, Ranges Methods Classes &amp;amp; Modules Strings Arrays Hashes Date&amp;amp;Time File I/O Exceptions  Tổng hợp chung 1.Một số toán tử trong ruby + plus - minus / slash ( chia lấy phần nguyên ) * asterisk ( chia lấy phần dư ) % percent &amp;lt; less-than &amp;gt; greater-than &amp;lt;= less-than-equal &amp;gt;= greater-than-equal  $ irb $ 7/3  2.</description>
     </item>
     
     <item>
