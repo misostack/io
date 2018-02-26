@@ -166,7 +166,7 @@
 
 <ul>
 <li>Syntax</li>
-<li>Variables</li>
+<li>Variables : number, string, symbol</li>
 <li>Operators</li>
 <li>Comments</li>
 <li>If Else</li>
@@ -183,7 +183,7 @@
 
 <h3 id="tổng-hợp-chung">Tổng hợp chung</h3>
 
-<h4 id="1-một-số-toán-tử-trong-ruby">1.Một số toán tử trong ruby</h4>
+<h4 id="0-một-số-toán-tử-trong-ruby">0.Một số toán tử trong ruby</h4>
 
 <pre><code class="language-bash">+ plus
 - minus
@@ -199,6 +199,44 @@
 <pre><code class="language-bash">$ irb
 $ 7/3
 
+</code></pre>
+
+<h4 id="1-variables">1.Variables</h4>
+
+<p><strong>String,Numbers,Boolean</strong></p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+str = 'A String'
+puts str
+number = 1
+puts number
+is_valid = true
+puts is_valid
+</code></pre>
+
+<p><strong>Symbol</strong></p>
+
+<p>Ref : <a href="http://rubylearning.com/satishtalim/ruby_symbols.html">http://rubylearning.com/satishtalim/ruby_symbols.html</a></p>
+
+<p>
+A Symbol is the most basic Ruby object you can create. It's just a name and an internal ID. Symbols are useful because a given symbol name refers to the same object throughout a Ruby program. Symbols are more efficient than strings. Two strings with the same contents are two different objects, but for any given name there is only one Symbol object. This can save both time and memory.
+</p>
+
+<p class="important">
+** Symbols are particularly useful when creating hashes and you want to have a distinction between keys and values. 
+</p>
+
+<pre><code class="language-ruby"># symbol
+puts &quot;string&quot;.object_id
+puts &quot;string&quot;.object_id
+puts :symbol_test.object_id
+puts :symbol_test.object_id
+</code></pre>
+
+<pre><code class="language-bash">47331505073880
+47331505073800
+941148
+941148
 </code></pre>
 
 <h4 id="2-if-else-case">2.If-Else, Case</h4>
@@ -280,6 +318,72 @@ end
 puts 'Hinh chu nhat co chieu_dai=2 va chieu_rong=2 la hinh vuong' if la_hinh_vuong?(2,2)
 puts 'Nam 2012 la nam nhuan' if kiem_tra_nam_nhuan?(2012)
 puts 'Nam 1000 khong phai la nam nhuan' unless kiem_tra_nam_nhuan?(1000)
+</code></pre>
+
+<h4 id="5-data-structures">5.Data Structures</h4>
+
+<pre><code class="language-bash">Array, Hash &amp; Iteration through Data Structures
+</code></pre>
+
+<p><strong>Array</strong></p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+puts 'Example for data structure'
+# array
+animals = ['cat', 'dog', 'bird', 'cow', 'chicken']
+
+animals.each { |e| puts e }
+
+animals.each_with_index { |e, index|
+  puts &quot;#{index + 1}.#{e}&quot;
+}
+
+weekdays = %w[
+  Sunday Monday Tuesday Wednesday Thursday Friday Saturday
+]
+
+(0..6).each { |i| puts weekdays[i] }
+
+students = []
+students.push('Lan')
+students &lt;&lt; 'Huy'
+students &lt;&lt; 'Phuong'
+
+puts &quot;There #{students.length} students:&quot;
+students.each { |e| puts e }
+</code></pre>
+
+<p><strong>Hash,Keys</strong></p>
+
+<pre><code class="language-ruby"># hash,keys
+people = {
+  'name' =&gt; 'Son',
+  'nickname' =&gt; 'miso',
+  'age' =&gt; 30,
+  'nationality' =&gt; 'Vietnamese'
+}
+
+puts &quot;My name is #{people['name']}&quot;
+puts &quot;My nickname is #{people['nickname']}&quot;
+puts &quot;I'm #{people['age']} years old&quot;
+puts &quot;I'm #{people['nationality']}&quot;
+
+# Using symbols as Hash Keys
+test_result = Hash.new
+test_result[:name] = 'miso'
+test_result[:math] = 10
+test_result[:physic] = 8
+test_result[:math] = 9 # final math points
+
+puts &quot;The test results of #{test_result[:name]} is:&quot;
+puts &quot;1.Math : #{test_result[:math]}&quot;
+puts &quot;2.Physic : #{test_result[:physic]}&quot;
+
+# loop
+test_result.each do |attribute, value|
+  puts &quot;#{attribute}: #{value}&quot;
+end
 </code></pre>
 
 <h2 id="một-số-bài-toán-nhỏ-để-thực-hành-ruby-basic">Một số bài toán nhỏ để thực hành ruby basic</h2>
