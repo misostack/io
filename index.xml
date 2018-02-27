@@ -6,10 +6,21 @@
     <description>Recent content on Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Feb 2018 14:26:52 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 27 Feb 2018 16:46:50 +0700</lastBuildDate>
     
 	<atom:link href="http://io.misostack.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cấu hình webpack nâng cao</title>
+      <link>http://io.misostack.com/posts/webpack-002/</link>
+      <pubDate>Tue, 27 Feb 2018 16:46:50 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/posts/webpack-002/</guid>
+      <description>Seperate Config between production and development npm install webpack-merge --save-dev npm install uglifyjs-webpack-plugin --save-dev  Remove file webpack.config.js thành 3 file
+webpack.common.js webpack.dev.js webpack.prod.js  webpack.common.js
+const webpack = require(&#39;webpack&#39;); //to access built-in plugins const path = require(&#39;path&#39;); const SRC_DIR = path.resolve(__dirname,&#39;src&#39;); const DIST_DIR = path.resolve(__dirname, &#39;dist&#39;); const ASSET_PATH = process.env.ASSET_PATH || &#39;&#39;; module.exports = { entry: { app: SRC_DIR + &#39;/index.js&#39; }, plugins: [ ], output: { path: DIST_DIR, filename: &#39;[name].</description>
+    </item>
     
     <item>
       <title>Angularjs Basic</title>
