@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Feb 2018 14:50:45 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 27 Feb 2018 14:26:52 +0700</lastBuildDate>
     
 	<atom:link href="http://io.misostack.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Angularjs</title>
+      <link>http://io.misostack.com/tags/angularjs/</link>
+      <pubDate>Tue, 27 Feb 2018 14:26:52 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/angularjs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache</title>
@@ -17,6 +26,33 @@
       <pubDate>Wed, 07 Feb 2018 14:50:45 +0700</pubDate>
       
       <guid>http://io.misostack.com/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>http://io.misostack.com/tags/css/</link>
+      <pubDate>Tue, 27 Feb 2018 13:55:35 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>http://io.misostack.com/tags/html/</link>
+      <pubDate>Tue, 27 Feb 2018 13:55:35 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://io.misostack.com/tags/javascript/</link>
+      <pubDate>Tue, 27 Feb 2018 14:26:52 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -48,6 +84,15 @@
     </item>
     
     <item>
+      <title>Reactjs</title>
+      <link>http://io.misostack.com/tags/reactjs/</link>
+      <pubDate>Tue, 27 Feb 2018 13:53:35 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/reactjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ror</title>
       <link>http://io.misostack.com/tags/ror/</link>
       <pubDate>Thu, 22 Feb 2018 15:44:41 +0700</pubDate>
@@ -66,6 +111,15 @@
     </item>
     
     <item>
+      <title>Sass</title>
+      <link>http://io.misostack.com/tags/sass/</link>
+      <pubDate>Tue, 27 Feb 2018 13:55:35 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Techblog</title>
       <link>http://io.misostack.com/tags/techblog/</link>
       <pubDate>Tue, 30 Jan 2018 15:11:54 +0700</pubDate>
@@ -80,6 +134,15 @@
       <pubDate>Thu, 08 Feb 2018 12:04:26 +0700</pubDate>
       
       <guid>http://io.misostack.com/tags/vps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webpack</title>
+      <link>http://io.misostack.com/tags/webpack/</link>
+      <pubDate>Tue, 27 Feb 2018 13:53:35 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/tags/webpack/</guid>
       <description></description>
     </item>
     
