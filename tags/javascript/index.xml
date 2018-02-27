@@ -26,7 +26,10 @@
       <pubDate>Tue, 27 Feb 2018 13:55:35 +0700</pubDate>
       
       <guid>http://io.misostack.com/posts/webpack/</guid>
-      <description></description>
+      <description>Sample Setup Khởi tạo npm package.json npm init  Install webpack package npm install webpack webpack-cli webpack-dev-server --save-dev  Thiết lập cây thư mục /dist/index.html .gitignore package.json /src/index.js /src/hello.js webpack.config.js  .gitignore
+# dependencies /node_modules # misc .DS_Store .env.local .env.development.local .env.test.local .env.production.local npm-debug.log* yarn-debug.log* yarn-error.log*  dist/index.html
+&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Example For Webpack&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script src=&amp;quot;app.bundle.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  src/index.js
+import hello from &#39;./hello&#39;; hello();  src/hello.js</description>
     </item>
     
     <item>
