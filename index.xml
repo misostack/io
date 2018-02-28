@@ -6,10 +6,23 @@
     <description>Recent content on Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Feb 2018 16:46:50 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2018 13:59:11 +0700</lastBuildDate>
     
 	<atom:link href="http://io.misostack.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Webpack sass, external libs, html page</title>
+      <link>http://io.misostack.com/posts/webpack-003/</link>
+      <pubDate>Wed, 28 Feb 2018 13:59:11 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/posts/webpack-003/</guid>
+      <description>HTMLWebpackPlugin package.json
+https://github.com/webpack-contrib/html-webpack-plugin
+... &amp;quot;html-webpack-plugin&amp;quot;: &amp;quot;webpack-contrib/html-webpack-plugin&amp;quot;, ...  Styles Sass
+npm install sass-loader node-sass --save-dev  Style
+npm install style-loader css-loader --save-dev  Usually, it&#39;s recommended to extract the style sheets into a dedicated file in production using the ExtractTextPlugin. This way your styles are not dependent on JavaScript npm i -D extract-text-webpack-plugin@next  Images npm i -D file-loader copy-webpack-plugin  background-image: url(&amp;quot;~images/example.png&amp;quot;);  Config sample webpack.common.js  const webpack = require(&#39;webpack&#39;); const path = require(&#39;path&#39;); const HTMLPlugin = require(&#39;html-webpack-plugin&#39;); const SRC_DIR = path.</description>
+    </item>
     
     <item>
       <title>Cấu hình webpack nâng cao</title>

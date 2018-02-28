@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Javascript | Technical Blog</title>
-    <meta name="description" content="Tổng hợp các bài viết thuộc chủ đề Javascript" />
+    <title>Webpack sass, external libs, html page | Technical Blog</title>
+    <meta name="description" content="html, sass, typescript" />
 
     <link href="http://io.misostack.com/dist/styles.css" rel="stylesheet"></head>
     <link href="http://io.misostack.com/dist/customs.css" rel="stylesheet"></head>
@@ -138,98 +138,246 @@
             <div class="row">
                 <main class="content col-md-9">
                     
-    <article class="article">
-        <h1>Javascript</h1>
-        <div class="article-list">
+    <article class="article article-scrollby" data-target="#article-scrollpy">
+        <h1>Webpack sass, external libs, html page</h1>
+        <p>
+            <strong>Categories: </strong>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack-003/"> <span class="title">Webpack sass, external libs, html page</span> - 28 Feb, 2018</a>
-                    
-                </div>
+                <a href="http://io.misostack.com/categories/frontend">frontend</a>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack-002/"> <span class="title">Cấu hình webpack nâng cao</span> - 27 Feb, 2018</a>
-                    
-                </div>
+        </p>        
+        <p>
+            <strong>Tags: </strong>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/angularjs-basic/"> <span class="title">Angularjs Basic</span> - 27 Feb, 2018</a>
-                    
-                </div>
+                <a href="http://io.misostack.com/tags/javascript">javascript</a>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack/"> <span class="title">Webpack</span> - 27 Feb, 2018</a>
-                    
-                </div>
+                <a href="http://io.misostack.com/tags/webpack">webpack</a>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/reactjs-webpack/"> <span class="title">ReactJS and Webpack</span> - 27 Feb, 2018</a>
-                    
-                </div>
-            
-        </div>
+        </p>
+        
+
+<h4 id="htmlwebpackplugin">HTMLWebpackPlugin</h4>
+
+<p><strong>package.json</strong></p>
+
+<p><a href="https://github.com/webpack-contrib/html-webpack-plugin">https://github.com/webpack-contrib/html-webpack-plugin</a></p>
+
+<pre><code class="language-javascript">    ...
+    &quot;html-webpack-plugin&quot;: &quot;webpack-contrib/html-webpack-plugin&quot;,
+    ...
+</code></pre>
+
+<h4 id="styles">Styles</h4>
+
+<p><strong>Sass</strong></p>
+
+<pre><code class="language-bash">npm install sass-loader node-sass --save-dev
+</code></pre>
+
+<p><strong>Style</strong></p>
+
+<pre><code class="language-bash">npm install style-loader css-loader --save-dev
+</code></pre>
+
+<p class="important">
+    Usually, it's recommended to extract the style sheets into a dedicated file in production using the ExtractTextPlugin. This way your styles are not dependent on JavaScript
+</p>
+
+<pre><code class="language-bash">npm i -D extract-text-webpack-plugin@next
+</code></pre>
+
+<h4 id="images">Images</h4>
+
+<pre><code class="language-bash">npm i -D file-loader copy-webpack-plugin
+</code></pre>
+
+<pre><code class="language-css">background-image: url(&quot;~images/example.png&quot;);
+</code></pre>
+
+<h4 id="config-sample">Config sample</h4>
+
+<p><a class="collapse-trigger" data-toggle="collapse" href="#collapse-webpack-common" role="button" aria-expanded="false" aria-controls="collapse-webpack-common">
+    <strong>webpack.common.js</strong>
+  </a>
+<div class="collapse" id="collapse-webpack-common"></p>
+
+<pre><code class="language-javascript">const webpack = require('webpack');
+const path = require('path');
+const HTMLPlugin = require('html-webpack-plugin');
+
+const SRC_DIR = path.resolve(__dirname,'src');
+const DIST_DIR = path.resolve(__dirname, 'dist');
+const ASSET_PATH = process.env.ASSET_PATH || '';
+
+module.exports = {
+  entry: {
+    app: SRC_DIR + '/index.js'
+  },
+  output: {
+    path: DIST_DIR,
+    filename: '[name].bundle.js',
+    publicPath: ASSET_PATH
+  },
+  resolve: {
+    modules: [SRC_DIR, &quot;node_modules&quot;],
+    extensions: ['.js', '.css', '.scss']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        include: /node_modules/,
+        loader:  ['style-loader','css-loader']
+      },      
+      // images
+      { 
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {            
+              name: 'assets/images/[name].[ext]',
+              outputPath: '',
+              useRelativePath: false            
+            }
+          }
+        ]
+      },
+      // fonts
+      { test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['file-loader'] }
+    ]
+  },
+  plugins: [
+    
+    new HTMLPlugin({
+      title: 'Webpack 4 Example',
+      // Load a custom template (lodash by default see the FAQ for details)
+      template: SRC_DIR + '/index.html'      
+    })    
+  ]
+};
+</code></pre>
+
+<p></div></p>
+
+<p><a class="collapse-trigger" data-toggle="collapse" 
+href="#collapse-webpack-dev">
+    <strong>webpack.dev.js</strong>
+  </a>
+<div class="collapse" id="collapse-webpack-dev"></p>
+
+<pre><code class="language-javascript">const merge = require('webpack-merge');
+const common = require('./webpack.common.js');
+
+const path = require('path');
+const SRC_DIR = path.resolve(__dirname,'src');
+const DIST_DIR = path.resolve(__dirname, 'dist');
+const ASSET_PATH = process.env.ASSET_PATH || '';
+
+module.exports = merge(common, {
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: DIST_DIR,
+    compress: false,
+    port: 9000,    
+    clientLogLevel: &quot;none&quot;,
+    historyApiFallback: true
+  },  
+  module: {
+    rules: [
+      // sass
+      {
+        test: /\.scss$/,
+        use: [{
+            loader: &quot;style-loader&quot;
+        }, {
+            loader: &quot;css-loader&quot;
+        }, {
+            loader: &quot;sass-loader&quot;          
+        }]
+      }      
+    ]
+  }
+});
+</code></pre>
+
+<p></div></p>
+
+<p><a class="collapse-trigger" data-toggle="collapse" href="#collapse-webpack-prod">
+    <strong>webpack.prod.js</strong>
+  </a>
+<div class="collapse" id="collapse-webpack-prod"></p>
+
+<pre><code class="language-javascript">const merge = require('webpack-merge');
+const common = require('./webpack.common.js');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const ExtractTextPlugin = require(&quot;extract-text-webpack-plugin&quot;);
+const ExtractStyles = new ExtractTextPlugin({filename: 'styles.css'});
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const path = require('path');
+const SRC_DIR = path.resolve(__dirname,'src');
+const DIST_DIR = path.resolve(__dirname, 'dist');
+const ASSET_PATH = process.env.ASSET_PATH || '';
+
+module.exports = merge(common, {
+    plugins: [
+        new UglifyJSPlugin(),
+        ExtractStyles,
+        new CopyWebpackPlugin([
+            { from:SRC_DIR + '/images', to: DIST_DIR + '/images' }
+        ])
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.scss$/,
+                use: ExtractStyles.extract({
+                    fallback: &quot;style-loader&quot;,
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                url: false,
+                                minimize: true,
+                                sourceMap: true
+                            }                            
+                        },
+                        { loader: &quot;sass-loader&quot;}
+                    ]                
+                })    
+            }
+        ]
+    }
+});
+</code></pre>
+
+<p></div></p>
+
     </article>
 
                 </main>
                 <aside id="primary-sidebar" class="sidebar col-md-3">
                     
-<div class="sidebar-fixed">
-    
     <div class="sidebar-widget">
-        <h3 class="widget-header ucfirst"><span>categories</span></h3>
-        
-            <a class="category-tag angularjs" href="http://io.misostack.com/categories/angularjs">angularjs</a>
-        
-            <a class="category-tag frontend" href="http://io.misostack.com/categories/frontend">frontend</a>
-        
-            <a class="category-tag hugo" href="http://io.misostack.com/categories/hugo">hugo</a>
-        
-            <a class="category-tag lamp" href="http://io.misostack.com/categories/lamp">lamp</a>
-        
-            <a class="category-tag notes" href="http://io.misostack.com/categories/notes">notes</a>
-        
-            <a class="category-tag reactjs" href="http://io.misostack.com/categories/reactjs">reactjs</a>
-        
-            <a class="category-tag ror" href="http://io.misostack.com/categories/ror">ror</a>
-                
-    </div>
+    <h3 class="widget-header ucfirst"><span>Post Series</span></h3>
+    <ul class="sidebar-links">
     
-    <div class="sidebar-widget">
-        <h3 class="widget-header ucfirst"><span>tags</span></h3>
-        
-            <a class="category-tag angularjs" href="http://io.misostack.com/tags/angularjs">angularjs</a>
-        
-            <a class="category-tag apache" href="http://io.misostack.com/tags/apache">apache</a>
-        
-            <a class="category-tag css" href="http://io.misostack.com/tags/css">css</a>
-        
-            <a class="category-tag html" href="http://io.misostack.com/tags/html">html</a>
-        
-            <a class="category-tag javascript" href="http://io.misostack.com/tags/javascript">javascript</a>
-        
-            <a class="category-tag linux" href="http://io.misostack.com/tags/linux">linux</a>
-        
-            <a class="category-tag mysql" href="http://io.misostack.com/tags/mysql">mysql</a>
-        
-            <a class="category-tag php" href="http://io.misostack.com/tags/php">php</a>
-        
-            <a class="category-tag reactjs" href="http://io.misostack.com/tags/reactjs">reactjs</a>
-        
-            <a class="category-tag ror" href="http://io.misostack.com/tags/ror">ror</a>
-        
-            <a class="category-tag ruby" href="http://io.misostack.com/tags/ruby">ruby</a>
-        
-            <a class="category-tag sass" href="http://io.misostack.com/tags/sass">sass</a>
-        
-            <a class="category-tag techblog" href="http://io.misostack.com/tags/techblog">techblog</a>
-        
-            <a class="category-tag vps" href="http://io.misostack.com/tags/vps">vps</a>
-        
-            <a class="category-tag webpack" href="http://io.misostack.com/tags/webpack">webpack</a>
-                
-    </div>
-                       
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack/">1.Webpack</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack-002/">2.Cấu hình webpack nâng cao</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack-003/">3.Webpack sass, external libs, html page</a></li>          
+    
+    </ul>
 </div>
+    <div class="sidebar-fixed">
+        <div id="article-scrollpy" class="sidebar-widget">
+            <h3 class="widget-header"><a href="#">Đầu mục bài viết</a></h3>
+            <ul class="sidebar-links article-scrollpy-links">
+            </ul>
+        </div>   
+    </div>
 
                 </aside>
             </div>
