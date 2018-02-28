@@ -352,7 +352,57 @@ module.exports = merge(common, {
 });
 </code></pre>
 
+<p></div>
+<a class="collapse-trigger" href="#collapse-package-json"><strong>package.json</strong></a>
+<div id="collapse-package-json"></p>
+
+<pre><code class="language-javascript">{
+  &quot;name&quot;: &quot;reactjs&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;samples&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+    &quot;start&quot;: &quot;webpack-dev-server --devtool eval --progress --colors --hot --inline --mode development --open  --config webpack.dev.js&quot;,
+    &quot;build&quot;: &quot;webpack --mode production  --config webpack.prod.js&quot;
+  },
+  &quot;author&quot;: &quot;misostack&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;copy-webpack-plugin&quot;: &quot;^4.4.2&quot;,
+    &quot;css-loader&quot;: &quot;^0.28.10&quot;,
+    &quot;extract-text-webpack-plugin&quot;: &quot;^4.0.0-beta.0&quot;,
+    &quot;file-loader&quot;: &quot;^1.1.10&quot;,
+    &quot;html-webpack-plugin&quot;: &quot;webpack-contrib/html-webpack-plugin&quot;,
+    &quot;node-sass&quot;: &quot;^4.7.2&quot;,
+    &quot;sass-loader&quot;: &quot;^6.0.6&quot;,
+    &quot;style-loader&quot;: &quot;^0.20.2&quot;,
+    &quot;uglifyjs-webpack-plugin&quot;: &quot;^1.2.2&quot;,
+    &quot;webpack&quot;: &quot;^4.0.1&quot;,
+    &quot;webpack-cli&quot;: &quot;^2.0.9&quot;,
+    &quot;webpack-dev-server&quot;: &quot;^3.0.0&quot;,
+    &quot;webpack-merge&quot;: &quot;^4.1.2&quot;
+  }
+}
+
+</code></pre>
+
 <p></div></p>
+
+<p><a class="btn"><strong>src/index.js</strong></a></p>
+
+<pre><code class="language-javascript">import './App.scss';
+import hello from './hello';
+hello();
+</code></pre>
+
+<p><a class="btn"><strong>src/App.scss</strong></a></p>
+
+<pre><code class="language-scss">body{
+    font-size:18px;
+    background: transparent url(&quot;images/section-welcome.jpg&quot;) no-repeat center center scroll;  
+}
+</code></pre>
 
     </article>
 

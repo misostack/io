@@ -73,13 +73,13 @@
   </url>
   
   <url>
-    <loc>http://io.misostack.com/categories/angularjs/</loc>
+    <loc>http://io.misostack.com/tags/angularjs/</loc>
     <lastmod>2018-02-27T14:26:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://io.misostack.com/tags/angularjs/</loc>
+    <loc>http://io.misostack.com/categories/angularjs/</loc>
     <lastmod>2018-02-27T14:26:52+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -163,25 +163,25 @@
   </url>
   
   <url>
-    <loc>http://io.misostack.com/categories/reactjs/</loc>
-    <lastmod>2018-02-27T13:53:35+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://io.misostack.com/tags/reactjs/</loc>
     <lastmod>2018-02-27T13:53:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://io.misostack.com/categories/ror/</loc>
-    <lastmod>2018-02-22T15:44:41+07:00</lastmod>
+    <loc>http://io.misostack.com/categories/reactjs/</loc>
+    <lastmod>2018-02-27T13:53:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://io.misostack.com/tags/ror/</loc>
+    <lastmod>2018-02-22T15:44:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://io.misostack.com/categories/ror/</loc>
     <lastmod>2018-02-22T15:44:41+07:00</lastmod>
     <priority>0</priority>
   </url>
