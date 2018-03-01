@@ -20,7 +20,7 @@
       <description> ES6 and babel npm i -D babel-loader@next @babel/core @babel/preset-env  IE 11 TypeError: Object doesn&#39;t support property or method &#39;includes&#39;
 Fixed
 http://babeljs.io/docs/plugins/transform-runtime/
-npm i -D @babel/plugin-transform-runtime npm i -D @babel/polyfill  How to use external libs with webpack Jquery and Webpack( not recommended )
+npm i -D @babel/plugin-transform-runtime npm i -D @babel/polyfill  React npm install --save react react-dom npm i -D @babel/preset-env  How to use external libs with webpack Jquery and Webpack( not recommended )
 Bootstrap and Webpack
 How to use typescript with webpack   How to use jsx with webpack </description>
     </item>
