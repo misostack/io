@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Feb 2018 13:59:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2018 17:02:42 +0700</lastBuildDate>
     
 	<atom:link href="http://io.misostack.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Webpack and javascript</title>
+      <link>http://io.misostack.com/posts/webpack-004/</link>
+      <pubDate>Wed, 28 Feb 2018 17:02:42 +0700</pubDate>
+      
+      <guid>http://io.misostack.com/posts/webpack-004/</guid>
+      <description> ES6 and babel npm i -D babel-loader@next @babel/core @babel/preset-env  IE 11 TypeError: Object doesn&#39;t support property or method &#39;includes&#39;
+Fixed
+http://babeljs.io/docs/plugins/transform-runtime/
+npm i -D @babel/plugin-transform-runtime npm i -D @babel/polyfill  How to use external libs with webpack Jquery and Webpack( not recommended )
+Bootstrap and Webpack
+How to use typescript with webpack   How to use jsx with webpack </description>
+    </item>
     
     <item>
       <title>Webpack sass, external libs, html page</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://io.misostack.com/posts/webpack-004/</loc>
+    <lastmod>2018-02-28T17:02:42+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://io.misostack.com/posts/webpack-003/</loc>
     <lastmod>2018-02-28T13:59:11+07:00</lastmod>
   </url>
@@ -73,13 +78,13 @@
   </url>
   
   <url>
-    <loc>http://io.misostack.com/tags/angularjs/</loc>
+    <loc>http://io.misostack.com/categories/angularjs/</loc>
     <lastmod>2018-02-27T14:26:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://io.misostack.com/categories/angularjs/</loc>
+    <loc>http://io.misostack.com/tags/angularjs/</loc>
     <lastmod>2018-02-27T14:26:52+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -104,7 +109,7 @@
   
   <url>
     <loc>http://io.misostack.com/categories/frontend/</loc>
-    <lastmod>2018-02-28T13:59:11+07:00</lastmod>
+    <lastmod>2018-02-28T17:02:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -122,7 +127,7 @@
   
   <url>
     <loc>http://io.misostack.com/tags/javascript/</loc>
-    <lastmod>2018-02-28T13:59:11+07:00</lastmod>
+    <lastmod>2018-02-28T17:02:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,13 +163,7 @@
   
   <url>
     <loc>http://io.misostack.com/posts/</loc>
-    <lastmod>2018-02-28T13:59:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://io.misostack.com/tags/reactjs/</loc>
-    <lastmod>2018-02-27T13:53:35+07:00</lastmod>
+    <lastmod>2018-02-28T17:02:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -175,13 +174,19 @@
   </url>
   
   <url>
-    <loc>http://io.misostack.com/tags/ror/</loc>
-    <lastmod>2018-02-22T15:44:41+07:00</lastmod>
+    <loc>http://io.misostack.com/tags/reactjs/</loc>
+    <lastmod>2018-02-27T13:53:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://io.misostack.com/categories/ror/</loc>
+    <lastmod>2018-02-22T15:44:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://io.misostack.com/tags/ror/</loc>
     <lastmod>2018-02-22T15:44:41+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -212,7 +217,7 @@
   
   <url>
     <loc>http://io.misostack.com/</loc>
-    <lastmod>2018-02-28T13:59:11+07:00</lastmod>
+    <lastmod>2018-02-28T17:02:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -224,7 +229,7 @@
   
   <url>
     <loc>http://io.misostack.com/tags/webpack/</loc>
-    <lastmod>2018-02-28T13:59:11+07:00</lastmod>
+    <lastmod>2018-02-28T17:02:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   

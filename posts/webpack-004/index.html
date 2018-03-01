@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Frontend | Technical Blog</title>
-    <meta name="description" content="Tổng hợp các bài viết thuộc chủ đề Frontend" />
+    <title>Webpack and javascript | Technical Blog</title>
+    <meta name="description" content="html, sass, typescript" />
 
     <link href="http://io.misostack.com/dist/styles.css" rel="stylesheet"></head>
     <link href="http://io.misostack.com/dist/customs.css" rel="stylesheet"></head>
@@ -138,93 +138,78 @@
             <div class="row">
                 <main class="content col-md-9">
                     
-    <article class="article">
-        <h1>Frontend</h1>
-        <div class="article-list">
+    <article class="article article-scrollby" data-target="#article-scrollpy">
+        <h1>Webpack and javascript</h1>
+        <p>
+            <strong>Categories: </strong>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack-004/"> <span class="title">Webpack and javascript</span> - 28 Feb, 2018</a>
-                    
-                </div>
+                <a href="http://io.misostack.com/categories/frontend">frontend</a>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack-003/"> <span class="title">Webpack sass, external libs, html page</span> - 28 Feb, 2018</a>
-                    
-                </div>
+        </p>        
+        <p>
+            <strong>Tags: </strong>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack-002/"> <span class="title">Cấu hình webpack nâng cao</span> - 27 Feb, 2018</a>
-                    
-                </div>
+                <a href="http://io.misostack.com/tags/javascript">javascript</a>
             
-                <div class="article-list-item">
-                    <a href="http://io.misostack.com/posts/webpack/"> <span class="title">Webpack</span> - 27 Feb, 2018</a>
-                    
-                </div>
+                <a href="http://io.misostack.com/tags/webpack">webpack</a>
             
-        </div>
+        </p>
+        
+
+<h3 id="es6-and-babel">ES6 and babel</h3>
+
+<pre><code>npm i -D babel-loader@next @babel/core @babel/preset-env
+</code></pre>
+
+<p class="important">IE 11 TypeError: Object doesn't support property or method 'includes'</p>
+
+<p><strong>Fixed</strong></p>
+
+<p><a href="http://babeljs.io/docs/plugins/transform-runtime/">http://babeljs.io/docs/plugins/transform-runtime/</a></p>
+
+<pre><code>npm i -D @babel/plugin-transform-runtime
+npm i -D @babel/polyfill
+</code></pre>
+
+<h3 id="how-to-use-external-libs-with-webpack">How to use external libs with webpack</h3>
+
+<p><strong>Jquery and Webpack( not recommended )</strong></p>
+
+<p><strong>Bootstrap and Webpack</strong></p>
+
+<h4 id="how-to-use-typescript-with-webpack">How to use typescript with webpack</h4>
+
+<pre><code>
+</code></pre>
+
+<h4 id="how-to-use-jsx-with-webpack">How to use jsx with webpack</h4>
+
     </article>
 
                 </main>
                 <aside id="primary-sidebar" class="sidebar col-md-3">
                     
-<div class="sidebar-fixed">
-    
     <div class="sidebar-widget">
-        <h3 class="widget-header ucfirst"><span>categories</span></h3>
-        
-            <a class="category-tag angularjs" href="http://io.misostack.com/categories/angularjs">angularjs</a>
-        
-            <a class="category-tag frontend" href="http://io.misostack.com/categories/frontend">frontend</a>
-        
-            <a class="category-tag hugo" href="http://io.misostack.com/categories/hugo">hugo</a>
-        
-            <a class="category-tag lamp" href="http://io.misostack.com/categories/lamp">lamp</a>
-        
-            <a class="category-tag notes" href="http://io.misostack.com/categories/notes">notes</a>
-        
-            <a class="category-tag reactjs" href="http://io.misostack.com/categories/reactjs">reactjs</a>
-        
-            <a class="category-tag ror" href="http://io.misostack.com/categories/ror">ror</a>
-                
-    </div>
+    <h3 class="widget-header ucfirst"><span>Post Series</span></h3>
+    <ul class="sidebar-links">
     
-    <div class="sidebar-widget">
-        <h3 class="widget-header ucfirst"><span>tags</span></h3>
-        
-            <a class="category-tag angularjs" href="http://io.misostack.com/tags/angularjs">angularjs</a>
-        
-            <a class="category-tag apache" href="http://io.misostack.com/tags/apache">apache</a>
-        
-            <a class="category-tag css" href="http://io.misostack.com/tags/css">css</a>
-        
-            <a class="category-tag html" href="http://io.misostack.com/tags/html">html</a>
-        
-            <a class="category-tag javascript" href="http://io.misostack.com/tags/javascript">javascript</a>
-        
-            <a class="category-tag linux" href="http://io.misostack.com/tags/linux">linux</a>
-        
-            <a class="category-tag mysql" href="http://io.misostack.com/tags/mysql">mysql</a>
-        
-            <a class="category-tag php" href="http://io.misostack.com/tags/php">php</a>
-        
-            <a class="category-tag reactjs" href="http://io.misostack.com/tags/reactjs">reactjs</a>
-        
-            <a class="category-tag ror" href="http://io.misostack.com/tags/ror">ror</a>
-        
-            <a class="category-tag ruby" href="http://io.misostack.com/tags/ruby">ruby</a>
-        
-            <a class="category-tag sass" href="http://io.misostack.com/tags/sass">sass</a>
-        
-            <a class="category-tag techblog" href="http://io.misostack.com/tags/techblog">techblog</a>
-        
-            <a class="category-tag vps" href="http://io.misostack.com/tags/vps">vps</a>
-        
-            <a class="category-tag webpack" href="http://io.misostack.com/tags/webpack">webpack</a>
-                
-    </div>
-                       
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack/">1.Webpack</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack-002/">2.Cấu hình webpack nâng cao</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack-003/">3.Webpack sass, external libs, html page</a></li>          
+    
+        <li><a class="ucfirst" href="http://io.misostack.com/posts/webpack-004/">4.Webpack and javascript</a></li>          
+    
+    </ul>
 </div>
+    <div class="sidebar-fixed">
+        <div id="article-scrollpy" class="sidebar-widget">
+            <h3 class="widget-header"><a href="#">Đầu mục bài viết</a></h3>
+            <ul class="sidebar-links article-scrollpy-links">
+            </ul>
+        </div>   
+    </div>
 
                 </aside>
             </div>
