@@ -134,8 +134,8 @@ PermitRootLogin no PasswordAuthentication no  </description>
       
       <guid>http://io.misostack.com/posts/cai-dat-ruby/</guid>
       <description>Hướng dẫn cài đặt ruby trên ubuntu(16.04) Chi tiết các bước thực hiện
- Cài đặt các gói ruby dependencies Cài đặt rbenv Cài đặt ruby Kiểm tra version Cài đặt gem bundler để quản lí packages  Cài đặt các gói ruby dependencies  sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
- Cài đặt rbenv  Link tham khảo : https://github.com/rbenv/rbenv  cd ~ git clone https://github.com/rbenv/rbenv.git ~/.rbenv cd ~/.</description>
+ Cài đặt các gói ruby dependencies Cài đặt rbenv Cài đặt ruby Kiểm tra version Cài đặt gem bundler để quản lí packages  Cài đặt các gói ruby dependencies  sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev sudo apt-get install build-essential
+ Cài đặt rbenv  Link tham khảo : https://github.com/rbenv/rbenv  cd ~ git clone https://github.</description>
     </item>
     
     <item>
